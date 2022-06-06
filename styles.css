@@ -12,8 +12,8 @@ body {
     --secondary-text-color: #5c5c62;
     --durability-text-color: #6a737d9c;
     --icon-color: #6a737d;
-    --border-color: #ff9a0045;
-    --text-decoration-color: #ff9a00;
+    --border-color: rgba(79, 79, 79, 0.27);
+    --text-decoration-color: #777575;
 }
 
 .container {
@@ -124,11 +124,12 @@ body {
 
 .contact-info__avatar {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     border: 3px solid;
-    border-color: var(--text-decoration-color);
+    border-color: #d7c7c5;
+    margin-left: 41%;
 }
 
 .intro {
@@ -162,60 +163,53 @@ body {
     text-align: center;
     margin-bottom: 15px;
 }
+.language__header {
+    color: var(--secondary-text-color);
+    text-align: center;
+    margin-bottom: 15px;
+}
+.education__header {
+    color: var(--secondary-text-color);
+    text-align: center;
+    margin-bottom: 15px;
+}
 
 .skills__text {
     color: var(--secondary-text-color);
     text-align: justify;
 }
-.experiences {
+
+.technical__skills {
+    flex: 1 1 60%;
+    margin-right: 50px;
+}
+.soft__skills {
     flex: 1 1 60%;
     margin-right: 50px;
 }
 
-.experiences__header {
-    color: var(--secondary-text-color);
-    text-align: left;
-    margin-bottom: 20px;
-}
 
-.experiences__company-header-durability {
-    color: var(--durability-text-color);
-    text-align: left;
-    margin-bottom: 10px;
-    font-size: 15px;
-}
 
-.experiences__company-header-name {
+
+.technical__skills-header-name {
     color: var(--primary-text-color);
-    text-decoration-color: var(--text-decoration-color);
-    text-decoration-line: underline;
-    text-align: left;
-    margin-bottom: 20px;
-}
-
-.experiences__company-project {
-    margin-left: 15px;
-    margin-bottom: 25px;
-}
-
-.experiences__company-project-role {
-    color: var(--durability-text-color);
     text-align: left;
     margin-bottom: 10px;
-    font-size: 15px;
 }
-
-.experiences__company-project-name {
+.soft__skills-header-name {
     color: var(--primary-text-color);
     text-align: left;
     margin-bottom: 10px;
 }
 
-.experiences__company-project-responsibilities {
+.technical__skills-list {
     color: var(--secondary-text-color);
     padding-left: 20px;
 }
-
+.soft__skills-list {
+    color: var(--secondary-text-color);
+    padding-left: 20px;
+}
 .additional-info {
     flex: 1 1 40%;
 }
@@ -258,5 +252,8 @@ body {
 }
 
 .additional-info__languages-item {
+    color: var(--secondary-text-color);
+}
+.university__name {
     color: var(--secondary-text-color);
 }
